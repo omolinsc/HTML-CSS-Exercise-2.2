@@ -115,6 +115,21 @@ input:checked {
   margin-bottom: 10px;
 }
 
+input:valid,
+textarea:valid {
+  background: #007c89;
+  color: white;
+  opacity: 50%;
+}
+
+input:invalid,
+textarea:invalid {
+  background: none;
+  color: darkred;
+  font-weight: bold;
+  opacity: 50%;
+}
+
 .anchor {
   text-decoration: underline;
   color: #007c89;
@@ -123,4 +138,33 @@ input:checked {
 .anchorlogin {
   text-decoration: none;
   color: #007c89;
+}
+
+.showPass {
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  font-size: 10px;
+  color:#007c89;
+  font-weight: bold;
+  display: inline-block;
+  margin-left: 415px;
+  margin-right: 10px;
+  vertical-align: middle;
+  padding-bottom: 2px;
+}
+
+.showPassImage {
+  cursor: pointer;
+  width: 150%;
+}
+
+.showPass2 {
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  font-size: 10px;
+  color:#007c89;
+  font-weight: bold;
+  display: inline-block;
 }

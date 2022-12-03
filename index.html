@@ -19,11 +19,12 @@
         </p>
         <form action="">
             <label for="email">eMail</label>
-            <input type="text" id="email" class="textbox" required>
+            <input type="text" id="email" class="textbox" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" placeholder="example@example.com" title="Introduce un eMail válido." required>
             <label for="username">Username</label>
-            <input type="text" id="username" class="textbox" required>
+            <input type="text" id="username" class="textbox" pattern="[A-Za-z0-9]{3,10}" minlength=3 maxlength=10 title="Máximo 10 carácteres - números y letras aceptados (símbolos excluidos)." required>
             <label for="password">Password</label>
-            <input type="password" id="password" class="textbox" required>
+            <div class="showPass"><img src="https://cdn-icons-png.flaticon.com/512/240/240111.png" class="showPassImage" alt=""></div><div class="showPass2">show</div>
+            <input type="password" id="password" class="textbox" minlenght=8 pattern="^(?=.*?[A-Z]{1,})(?=(.*[a-z]){1,})(?=(.*[\d]){1,})(?=(.*[\W]){1,})(?!.*\s).{8,}$" title="Por favor, reúne todos los requisitos descritos debajo." required>
         </form>
             <ul>
                 <div class="inlinelist">
