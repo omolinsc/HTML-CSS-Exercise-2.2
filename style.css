@@ -94,6 +94,10 @@ li {
   margin-left: 15px;
 }
 
+input:checked {
+  opacity: 100%;
+}
+
 .check:hover {
   height: 20px;
   width: 20px;
