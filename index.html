@@ -23,7 +23,7 @@
             <label for="username">Username</label>
             <input type="text" id="username" class="textbox" pattern="[A-Za-z0-9]{3,10}" minlength=3 maxlength=10 title="Máximo 10 carácteres - números y letras aceptados (símbolos excluidos)." required>
             <label for="password">Password</label>
-            <div class="showPass"><img src="https://cdn-icons-png.flaticon.com/512/240/240111.png" class="showPassImage" alt=""></div><div class="showPass2">show</div>
+            <div class="showPass"><img src="https://cdn-icons-png.flaticon.com/512/240/240111.png" onclick="myFunction()" class="showPassImage" alt=""></div><div class="showPass2" onclick="myFunction()">show</div>
             <input type="password" id="password" class="textbox" minlenght=8 pattern="^(?=.*?[A-Z]{1,})(?=(.*[a-z]){1,})(?=(.*[\d]){1,})(?=(.*[\W]){1,})(?!.*\s).{8,}$" title="Por favor, reúne todos los requisitos descritos debajo." required>
         </form>
             <ul>
@@ -50,6 +50,19 @@
             By clicking the "Sign Up" button, you are creating a Mailchimp account, and you agree to Mailchimp's <a href="" class="anchor">Terms of Use</a> and <a href="" class="anchor">Privacy</a>
         </p>
     </div>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("password");
+          if (x.type === "password")
+          {
+            x.type = "text";
+          } else 
+          {
+            x.type = "password";
+          }
+        }
+    </script>
     
 </body>
 </html>
